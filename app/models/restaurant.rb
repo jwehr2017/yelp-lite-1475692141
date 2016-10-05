@@ -13,6 +13,10 @@ class Restaurant < ApplicationRecord
 
   # Indirect associations
 
+  has_many   :tags,
+             :through => :restaurant_tags,
+             :source => :tags
+
   # Validations
 
   validates :total_reviews, :numericality => true
