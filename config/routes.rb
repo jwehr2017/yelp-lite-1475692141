@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   # Routes for the Tag resource:
   # CREATE
   get "/tags/new", :controller => "tags", :action => "new"
