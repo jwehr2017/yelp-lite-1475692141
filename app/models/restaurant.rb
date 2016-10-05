@@ -5,4 +5,6 @@ class Restaurant < ApplicationRecord
 
   # Validations
 
+  validates :total_reviews, :numericality => true
+
 end
