@@ -1,6 +1,10 @@
 class User < ApplicationRecord
   # Direct associations
 
+  has_many   :ratings,
+             :class_name => "Review",
+             :dependent => :destroy
+
   # Indirect associations
 
   # Validations
