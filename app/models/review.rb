@@ -1,6 +1,9 @@
 class Review < ApplicationRecord
   # Direct associations
 
+  belongs_to :restaurant,
+             :counter_cache => :ratings_count
+
   # Indirect associations
 
   # Validations
